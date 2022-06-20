@@ -107,6 +107,17 @@ $(document).ready(function() {
         }
 
 
+        // El input que queremos validar
+        const input = document.forms['validationForm']['nombre'];
+    
+        // El pattern que vamos a comprobar
+        const pattern = new RegExp('^[A-Z]+$', 'i');
+    
+      // Por último, nuestra función que verifica si el campo es válido antes de realizar cualquier otra acción.
+        if (input != pattern ) {
+          alert('SOLO LETRAS EN EL CAMPO "NOMBRE"');
+          return false;
+        } 
 
         //Correo
 
