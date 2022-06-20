@@ -1,0 +1,116 @@
+/*Marquen sus partes del css*/
+
+/*Jose*/
+.fondo{
+    background-color: #1e1d1f ;
+}
+
+.text-2xl{
+    font-family: 'Secular One', sans-serif;    /*tipo de fuente para el texto*/
+}
+
+.letra{
+    border:solid 1px #780606; 
+    color: #1e1d1f;
+}
+
+.barra-superior{
+    background-color: #1e1d1f;
+    height:70px;
+    width: 95%;
+}
+
+.barra{
+    border:solid 1px black ;
+}
+
+a{
+    color: azure;
+}
+
+.inicio{
+    position: relative;
+    left:10px;
+    top: 10px;
+}
+
+.close{
+    position: relative;
+    left: 92%;
+    bottom: 10%;
+}
+
+.name{ font-weight: 900; }
+
+.letrawe{
+    font-family: 'Secular One', sans-serif;
+    color: white;
+    position:relative;
+    width: 95%;
+}
+
+.supchat{
+    border: solid 1px #0d6efd;
+}
+
+.mueve{
+    position: relative;
+    width:10% ;
+}
+
+hr{
+    color: aliceblue;
+}
+
+.booody{
+
+    /* Ubicación de la imagen */
+    
+    background-image: url(../imagenes/Fondos/drake-12.jpg);
+    
+    /* Para dejar la imagen de fondo centrada, vertical y
+    
+    horizontalmente */
+    
+    background-position: center center;
+    
+    /* Para que la imagen de fondo no se repita */
+    
+    background-repeat: no-repeat;
+    
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    
+    background-attachment: fixed;
+    
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    
+    background-size: cover;
+    
+    /* Se muestra un color de fondo mientras se está cargando la imagen
+    
+    de fondo o si hay problemas para cargarla */
+    
+    background-color: #000000;
+    
+}
+
+.wewe{
+    background: linear-gradient(to right, rgba(110, 4, 167, 0.199) ,rgba(96, 2, 133, 0.151));
+    position: relative;
+}
+
+.titulo-1{
+    color: antiquewhite;
+    position: relative;
+    top: 20%;
+}
+
+.letra-2{
+    border: solid 1px black;
+}
+
+.enviado{
+    position: relative;
+    left: 92%;
+    width: 120px;
+}

@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <title>Chat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'core/css/chat.css' %}">
+    <link rel="icon" href="{% static 'core/img/logos/LOGO1_2.png' %}">
+    
+</head>
+
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">KAI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+        aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Más opciones
+            </a>
+            
+            <!--RELLENAR CON BOTONES EXTRAS -->
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="{% url 'inicio' %}">Inicio</a></li>
+                <li><a class="dropdown-item" href="{% url 'chat' %}">Chat</a></li>
+                <li><a class="dropdown-item" href="{% url 'ayuda' %}">Ayuda</a></li>
+                <li><a class="dropdown-item" href="{% url 'index' %}">Cerrar sesión</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link " href="{% url 'api' %}">Consulta precio de RP</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <div class="padrepadre">
+        <div class="padre">
+            <!--lado izquierdo-->
+            <div class="iz">
+
+                <div class="tcontactos">
+                    <h3>Tus contactos</h3>
+                </div>
+
+                <div class="container c1">
+                    <div class="container container-fluid cajabotones">
+                        <div>
+                            <button class="btn botonchat" id="boton1">
+                                <img src="{% static 'core/img/perfiles/JoseLechuga.jpg' %}" alt="jose" class="imgbtnchat">
+                                <p class="text-md-start"><b>Jose Lechuga</b> <br> Start aligned text on viewports sized MD (medium) or wider.</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn botonchat" id="boton2">
+                                <img src="{% static 'core/img/perfiles/JuanTopo.png' %}" alt="jose" class="imgbtnchat">
+                                <p class="text-md-start"><b>Jordan Iruxx</b> <br>Start aligned text on viewports sized MD (medium) or wider.</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn botonchat" id="boton3">
+                                <img src="{% static 'core/img/perfiles/juanin.jpg' %}" alt="jose" class="imgbtnchat">
+                                <p class="text-md-start"><b>Matias Kodwell</b> <br>Start aligned text on viewports sized MD (medium) or wider.</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn botonchat" id="boton4">
+                                <img src="{% static 'core/img/perfiles/diego.jpg' %}" alt="jose" class="imgbtnchat">
+                                <p class="text-md-start"><b>Diego GUARDIA_SNIPER</b> <br>Start aligned text on viewports sized MD (medium) or wider.</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn botonchat" id="boton5">
+                                <img src="{% static 'core/img/imgchat/victor.png' %}" alt="jose" class="imgbtnchat">
+                                <p class="text-md-start"><b>Choche007</b> <br>Start aligned text on viewports sized MD (medium) or wider.</p>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn botonchat" id="boton6">
+                                <img src="{% static 'core/img/imgchat/rodri.png' %}" alt="jose" class="imgbtnchat">
+                                <p class="text-md-start"><b>El canaleta</b> <br>Start aligned text on viewports sized MD (medium) or wider.</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--lado derecho-->
+            <div class="der">
+                <div class="contactochat">
+
+                    <div class="persona1" id="persona">
+                        <div class="nmbr_contacto_estado">
+                            <div class="nmbrcontactopersonachat">
+                                <h3>CHAT ONLINE</h3>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="persona1" id="persona1">
+                        <div class="imagendecontactochat">
+                            <img src="{% static 'core/img/perfiles/JoseLechuga.jpg' %}" alt="" class="imagencontactosuperior">
+                        </div>
+
+                        <div class="nmbr_contacto_estado">
+                            <div class="nmbrcontactopersonachat">
+                                <h3>Jose Lechuga</h3>
+                            </div>
+                            <span class="estado">◉</span>
+                            <span class="lin">En linea</span>
+                        </div>
+                    </div>
+
+                    <div class="persona2" id="persona2">
+                        <div class="imagendecontactochat">
+                            <img src="{% static 'core/img/perfiles/JuanTopo.png' %}" alt="" class="imagencontactosuperior">
+                        </div>
+
+                        <div class="nmbr_contacto_estado">
+                            <div class="nmbrcontactopersonachat">
+                                <h3>Jordan Iruxx </h3>
+                            </div>
+                            <span class="estado">◉</span>
+                            <span class="lin">En linea</span>
+                        </div>
+                    </div>
+
+                    <!--div caja de los chat-->
+                    <div class="cajachat">
+                        <!--div con imagen sin chat seleccionado-->
+                        <div class="container fotosinchat" align="center" id="fotosinchat">
+                            <img src="{% static 'core/img/Fondos/fondo_sin_chat.png' %}" alt="" class="fotosinchat" id="fotosinchat">
+                        </div>
+
+                        <div class="" id="chatuno_1">
+                            <!--chat izquierdo-->
+                            <div class="p-4 primertextochat">
+                                <img src="{% static 'core/img/perfiles/JoseLechuga.jpg' %}" alt="" class="imagencontactosuperior">
+                                <div class="texto">
+                                    <p class="text-md-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                                    </p>
+                                </div>
+                            </div>
+                            <!--chat derecho-->
+                            <div class="p-4 segundotextochat">
+                                <div class="texto2">
+                                    <p class="text-md-center">
+                                        No parlo takataka
+                                    </p>
+                                </div>
+                                <img src="{% static 'core/img/imgchat/elmo.jpg' %}" alt="" class="imagencontactosuperior">
+                            </div>
+                            <!--chat izquierdo-->
+                            <div class="p-4 primertextochat">
+                                <img src="{% static 'core/img/perfiles/JoseLechuga.jpg' %}" alt="" class="imagencontactosuperior">
+                                <div class="texto">
+                                    <p class="text-md-center">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe hic illum, odit dolore harum ....... lorem lorem 
+                                    </p>
+                                </div>
+                            </div>
+                            <!--chat derecho-->
+                            <div class="p-4 segundotextochat">
+                                <div class="texto2">
+                                    <p class="text-md-center">
+                                        KHA!? <br>
+                                        hablame bien !! WHAT DICEEEE!?
+                                    </p>
+                                </div>
+                                <img src="{% static 'core/img/imgchat/elmo.jpg' %}" alt="" class="imagencontactosuperior">
+                            </div>
+                            <!--chat izquierdo-->
+                            <div class="p-4 primertextochat">
+                                <img src="{% static 'core/img/perfiles/JoseLechuga.jpg' %}" alt="" class="imagencontactosuperior">
+                                <div class="texto">
+                                    <p class="text-md-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                                    </p>
+                                </div>
+                            </div>
+                            <!--chat derecho-->
+                            <div class="p-4 segundotextochat">
+                                <div class="texto2">
+                                    <p class="text-md-center">
+                                        .... <br>
+                                        AMENO (?
+                                    </p>
+                                </div>
+                                <img src="{% static 'core/img/imgchat/elmo.jpg' %}" alt="" class="imagencontactosuperior">
+                            </div>
+
+                        </div>
+
+
+                        <!--SEGUNDA OPCION DE CHATS AL PRIMIR BOTON-->
+                        <div class="" id="chatdos_2">
+                            <!--chat izquierdo-->
+                            <div class="p-4 primertextochat">
+                                <img src="{% static 'core/img/perfiles/JuanTopo.png' %}" alt="" class="imagencontactosuperior">
+                                <div class="texto">
+                                    <p class="text-md-center">
+                                        Baila morena, baila morena <br>
+                                        💃🕺
+                                    </p>
+                                </div>
+                            </div>
+                            <!--chat derecho-->
+                            <div class="p-4 segundotextochat">
+                                <div class="texto2">
+                                    <p class="text-md-center">
+                                        Perreo pa' los nenes, perreo pa' las nenas
+                                    </p>
+                                </div>
+                                <img src="{% static 'core/img/imgchat/elmo.jpg' %}" alt="" class="imagencontactosuperior">
+                            </div>
+                            <!--chat izquierdo-->
+                            <div class="p-4 primertextochat">
+                                <img src="{% static 'core/img/perfiles/JuanTopo.png' %}" alt="" class="imagencontactosuperior">
+                                <div class="texto">
+                                    <p class="text-md-center">
+                                        BAILA MORENA<br>
+                                        BAILA MORENA<br>
+                                        !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                                    </p>
+                                </div>
+                            </div>
+                            <!--chat derecho-->
+                            <div class="p-4 segundotextochat">
+                                <div class="texto2">
+                                    <p class="text-md-center">
+                                        Dale moreno.que nos fuimos a fuegoteeeeeeeeee 🎶🎶🎶
+                                    </p>
+                                </div>
+                                <img src="{% static 'core/img/imgchat/elmo.jpg' %}" alt="" class="imagencontactosuperior">
+                            </div>
+                            <!--chat izquierdo-->
+                            <div class="p-4 primertextochat">
+                                <img src="{% static 'core/img/perfiles/JuanTopo.png' %}" alt="" class="imagencontactosuperior">
+                                <div class="texto">
+                                    <p class="text-md-center">
+                                        Temon😎 
+                                        Luney tunes y Noriega , su clasico aksjasdasdjka 
+                                    </p>
+                                </div>
+                            </div>
+                            <!--chat derecho-->
+                            <div class="p-4 segundotextochat">
+                                <div class="texto2">
+                                    <p class="text-md-center">
+                                        Mejor papi Chayanne... 
+                                        TU PIRATA SOY YOOOOOOOOOOO!!!!!!! <br>
+                                        yo la amaba :'v
+                                    </p>
+                                </div>
+                                <img src="{% static 'core/img/imgchat/elmo.jpg' %}" alt="" class="imagencontactosuperior">
+                            </div>
+
+                            
+                        </div>
+
+                        <!--div input-->
+                        <div class="p-2 cajadeenvio">
+                            <input type="text" class="input" placeholder="Escribe tu mensaje aqui">
+                            <button class="btn botondeenvio">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+        <script src="{% static 'core/js/chat.js' %}"></script>

@@ -1,0 +1,314 @@
+body{
+    background-image: url(../img/Fondos/bk_carru.png);
+}
+
+.padre{
+    display: flex;
+    flex-direction: row;
+}
+
+/*caja izquierda */
+.iz{
+    background-image: url(../img/Fondos/fondobtnschat.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+}
+
+.tcontactos{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 3px;
+}
+
+.c1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fotosinchat{
+    height: 750px;
+    width: 1200px;
+}
+
+/*caja botones de chat*/
+.cajabotones{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.botonchat{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    border: 2px solid red;
+    background-color: #6a6666;
+}
+
+.imgbtnchat{
+    border-radius: 100px;
+    height: 70px;
+    width: 70px;
+}
+
+
+
+
+/*caja derecha */
+.der{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+.cajachat{
+    border: 1px solid red;
+    display:flex ;
+    flex-direction: column;
+    background-color: #3f3f3f;
+}
+
+.persona1{
+    display:flex ;
+    padding: 10px;
+    margin: 10px;
+}
+.persona2{
+    display:flex ;
+    padding: 10px;
+    margin: 10px;
+}
+
+.lin{
+    color: white;
+}
+
+.imagencontactosuperior{
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+.estado{
+    color: green;
+}
+
+.nmbrcontactopersonachat{
+    color: white;
+}
+
+.primertextochat{
+    display: flex;
+}
+
+.segundotextochat{
+    display: flex;
+    justify-content: end;
+}
+
+.texto{
+    background-color: rgba(82,119,176,33);
+    border-radius: 20px 20px 20px 0px;
+    width: 280px;
+    color: white;
+}
+
+.texto2{
+    background-color: rgba(82, 165,176,33);
+    border-radius: 20px 20px 0px 20px;
+    width: 280px;
+    color: white;
+}
+
+.cajadeenvio{
+    border: 2px solid red;
+    display: flex;
+    height:  75px;
+
+}
+
+
+/*DISEÑO DE INPUT*/
+.input {
+    width: 1200px;
+    height: 50px;
+    border: 2px solid transparent;
+    outline: none;
+    border-bottom: 2px solid #3f3f3f;
+    caret-color: #3f3f3f;
+    background-color: #6a6666;
+    padding: 5px;
+    transition: .5s linear;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+.input:focus {
+    border: 2px solid #fa4753;
+    caret-color: #fa4753;
+    color: #fa4753;
+    box-shadow: 4px 4px 10px #070707;
+}
+
+.input:focus::placeholder {
+    color: #fa4753;
+}
+
+.botondeenvio{
+    --color: #880d0d;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 3em;
+    line-height: 2.5em;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+}
+
+.botondeenvio:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.botondeenvio:hover {
+    color: #fff;
+}
+
+.botondeenvio:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+
+.botondeenvio:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.botondeenvio:active:before {
+    background: #900909;
+    transition: background 0s;
+}
+
+
+@media (max-width:1622px){
+    .text-md-start{
+        font-size: 12px
+    }
+
+    .texto{
+        background-color: blue;
+        border-radius: 20px 20px 20px 0px;
+        width: 450px;
+    }
+
+    .texto2{
+        background-color: rgba(82, 165,176,33);
+        border-radius: 20px 20px 0px 20px;
+        width: 450px;
+    }
+}
+
+@media(max-width:1570px){
+    .padre{
+        flex-direction: column;
+    }
+
+    .cajabotones{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text-md-start{
+        font-size: 10px
+    }
+}
+
+@media(max-width:1200px){
+    .text-md-start{
+        font-size: 0px
+    }
+
+    .botonchat{
+        display: flex;
+        width: 152px;
+        border: 2px solid red;
+    }
+
+    .fotosinchat{
+        height: 550px;
+        width: 900px;
+    }
+}
+
+@media(max-width:990px){
+    .text-md-start{
+        font-size: 0px
+    }
+
+    .botonchat{
+        display: flex;
+        width:110px;
+        border: 2px solid red;
+    }
+
+    .imgbtnchat{
+        border-radius: 20px;
+        height: 80px;
+        width: 65px;
+    }
+
+    .fotosinchat{
+        height: 550px;
+        width: 800px;
+    }
+}
+
+@media(max-width:765px){
+    .text-md-start{
+        font-size: 0px
+    }
+
+    .botonchat{
+        display: flex;
+        width: 80px;
+        background-color: #6a6666;
+        border: 2px solid red;
+    }
+
+    .imgbtnchat{
+        border-radius: 20px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .fotosinchat{
+        height: 350px;
+        width: 550px;
+    }
+}
+
+
+@media(max-width:500px){
+    body{
+        background-image: url(../imagenes/Fondos/hola2.jpg);
+    }
+}

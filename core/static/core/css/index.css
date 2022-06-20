@@ -1,0 +1,12 @@
+body{
+    background: #1e1d1f;
+}
+.bg{
+    background-image: url(../img/Fondos/dragon1.jpg);
+    background-position: center center;
+}
+
+#btn-google{
+    width: 100px;
+    height: 70px;
+}

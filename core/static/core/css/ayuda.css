@@ -1,0 +1,205 @@
+
+body{
+    background-image: url(../img/Fondos/bk_carru.png);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenedor{
+    background-image: url(../img/Fondos/fondoformulario1.png);
+
+    height: 78vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#cuadrofiltro{
+    margin: 100px;
+    width: 700px;
+    height: 450px;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.796);
+    border: 1px solid #7b141417;
+    right: 15%;
+    margin-right: 10%;
+    left: 15%;
+}
+
+.filtro{
+    -webkit-backdrop-filter:blur(5px);
+    backdrop-filter:blur(5px);
+    background-color: rgba(61, 34, 34, 0.304);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    left: 15%;
+
+}
+
+h1{
+    position: absolute;
+    color: #fff;
+    top: 0%;
+    right: 20%;
+}
+h3{
+    font-family: 'Orelega One', cursive;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+h4{
+    position: absolute;
+    color: #fff;
+    top: 25%;
+    right: 15%;
+    left: 10%;
+}
+
+h5{
+    position: absolute;
+    color: #fff;
+    top: 60%;
+    right: 15%;
+    left: 10%;
+}
+
+button {
+    --color: #ad0b21;
+    font-family: inherit;
+    display: inline-block;
+    width: 10em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   button:hover {
+    color: #fff;
+   }
+   
+   button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   button:active:before {
+    background: #a30c1e;
+    transition: background 0s;
+   }
+
+   .contenedor2{
+    background-image: url(../imagenes/Fondos/fondoformulario2.png);
+    height: 100vh;
+}
+
+.limpiarformulario{
+    position: absolute;
+    left: 30%;
+}
+
+/*Fuente de letras formulario*/
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+.letraform{
+    font-family: 'Orelega One', cursive;
+    font-size: 30px;
+    color: aliceblue;
+    -webkit-text-stroke: 2px black;
+}
+
+
+/*Animacion de input*/
+.input {
+    border: 3px solid rgb(127, 170, 170);
+    border-radius: 20px;
+    background-color: rgb(77, 75, 75);
+    cursor: pointer;
+    padding: 7px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 1s;
+    max-width: 15em;
+}
+
+
+
+.cajacomentario{
+    border: 3px solid rgb(127, 170, 170);
+    border-radius: 20px;
+    background-color: rgb(77, 75, 75);
+    cursor: pointer;
+    padding: 7px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 1s;
+}
+
+
+#nombre{
+    border: 3px solid rgb(127, 170, 170);
+    border-radius: 20px;
+    background-color: rgb(77, 75, 75);
+    cursor: pointer;
+    padding: 7px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 1s;
+}
+
+#email{
+    border: 3px solid rgb(127, 170, 170);
+    border-radius: 20px;
+    background-color: rgb(77, 75, 75);
+    cursor: pointer;
+    padding: 7px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 1s;
+}
+
+
+#comentario{
+    border: 3px solid rgb(127, 170, 170);
+    border-radius: 20px;
+    background-color: rgb(77, 75, 75);
+    cursor: pointer;
+    padding: 7px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 1s;
+}
+
+
+.r1a{
+    display: flex;
+    justify-content: center;
+}
+.titulo1{
+    color: aliceblue;
+}

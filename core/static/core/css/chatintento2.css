@@ -1,0 +1,179 @@
+
+/*Jose*/
+body{
+background-color: #1e1d1f;
+}
+
+button{
+    height:90px;
+    width: 450px;
+    border-radius: 10px;
+    border: 2px solid brown;
+    background-color: aqua;
+}
+
+.dentroboton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.bordeboton{
+    border: 2px solid brown;
+}
+
+.fotochatizquierdo{
+    border-radius: 100px;
+    height: 40px;
+}
+
+.textodentrochatizquierdo{
+    font-size: 0.9vw;
+}
+
+
+
+#cuadroizquierdachats{
+    background-image: url(../imagenes/Fondos/fonizqchat4.png);
+}
+
+#cuadrochatsuno{
+    border: 1px solid brown;
+    border-radius: 5px;
+
+}
+
+#fondochat{
+    background-image: url(../imagenes/Fondos/bk_carru.png);
+    border: 1px solid  #780606;
+}
+
+
+.name{ 
+    font-weight: 900;
+    color: white;
+}
+
+small{
+    color: white;
+}
+
+#textochatglobo{
+    color: #070707;
+}
+
+.text-2xl{
+    font-family: 'Secular One', sans-serif;    /*tipo de fuente para el texto*/
+}
+
+.letra{
+    border:solid 1px #780606; 
+    color: #1e1d1f;
+}
+
+.supchat{
+    border: solid 1px #780606;
+}
+
+#bordeventanachats{
+    border: solid 3px #780606;
+    border-radius: 10px;
+}
+
+.barra{
+    border:solid 1px black ;
+}
+
+a{
+    color: azure;
+}
+
+.inicio{
+    position: relative;
+    left:10px;
+    top: 10px;
+}
+
+.close{
+    position: relative;
+    left: 92%;
+    bottom: 10%;
+}
+
+
+
+.letrawe{
+    font-family: 'Secular One', sans-serif;
+    color: white;
+    position:relative;
+    width: 95%;
+}
+
+
+
+.mueve{
+    position: relative;
+    width:10% ;
+}
+
+hr{
+    color: aliceblue;
+}
+
+
+
+.wewe{
+    background: linear-gradient(to right, rgba(110, 4, 167, 0.199) ,rgba(96, 2, 133, 0.151));
+    position: relative;
+}
+
+.titulo-1{
+    color: antiquewhite;
+    position: relative;
+    top: 20%;
+}
+
+.letra-2{
+    border: solid 1px black;
+}
+
+.enviado{
+    position: relative;
+    left: 92%;
+    width: 120px;
+}
+
+
+
+#barerainput{
+    max-width: 1900px;
+    height: 30px;
+    border: 2px solid transparent;
+    outline: none;
+    border-bottom: 2px solid #3f3f3f;
+    caret-color: #3f3f3f;
+    background-color: #212121;
+    padding: 5px;
+    transition: .5s linear;
+    font-family: monospace;
+    letter-spacing: 1px;
+  }
+  
+#barerainput:focus {
+    border: 2px solid #fa4753;
+    caret-color: #fa4753;
+    color: #fa4753;
+    box-shadow: 4px 4px 10px #070707;
+  }
+  
+#barerainput:focus::placeholder {
+    color: #fa4753;
+  }
+
+  @media (min-width: 700px) and (orientation: landscape) { 
+
+
+
+   }

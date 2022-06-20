@@ -1,0 +1,227 @@
+
+h2, cite,p,th,hr,td{
+    color: white;
+}
+h3{
+    color: red;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #1e1d1f;
+}
+.section{
+    height: auto;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.links{
+    border: 1px solid red;
+    border-radius: 15px;
+    width: 25%;
+    height: auto;
+    min-width: 300px;
+    padding: 5px;
+}
+.profileuser{
+    border: 1px solid red;
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
+    min-width: 300px;
+    padding: 5px;
+}
+.suggestions{
+    border: 1px solid red;
+    border-radius: 15px;
+    width: 25%;
+    height: auto;
+    min-width: 300px;
+    padding-left: 50px;
+    align-content: flex-start;
+}
+@media(max-width:900px){
+    .section{
+        padding: 0px;
+    }
+}
+@media(max-width: 1600px){
+    .links, .profileuser, .suggestions{
+        width: 100%;
+    }
+    .section{
+        padding: 10px;
+    }
+}
+.profileimages{
+    min-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+}
+.profileimages > .imageportada{
+    position:absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+.imageuser{
+        width:150px;
+        height:150px;
+        border-radius:160px;
+        border:5px solid #1e1d1f;
+        float: left;
+}
+/*Boton para publicar*/
+.botonxd {
+    color: red;
+    border: 2px solid red;
+    border-radius: 25px;
+    padding: 5px 15px;
+    background: transparent;
+  }
+  
+  .botonxd:hover {
+    box-shadow: 2px 2px 15px rgb(153, 55, 55) inset;
+  }
+  
+  .botonxd:active {
+    box-shadow: 2px 2px 20px rgb(153, 55, 55) inset;
+  }
+.estadistics{
+    font-size: larger;
+    padding-left:100px;
+    padding-right:100px;
+}
+/*Textarea de publi y comentario*/
+.purple-border .form-control:focus {
+    border: 1px solid #0063f7;
+    box-shadow: 0 0 0 0.2rem rgba(186, 104, 200, .25);
+    background-color: #1e1d1f;
+}
+
+.green-border-focus .form-control:focus {
+    border: 1px solid #0063f7;
+    box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+    background-color: #1e1d1f; 
+}
+#exampleFormControlTextarea5{
+    float: left;
+    background-color: #1e1d1f;color:white; border-radius:25px; border-color:#1e1d1f;
+    max-width: 1000px;
+}
+/*Boton para subir archivo*/
+.file {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+  }
+  .file-input label {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 25px;
+    border-radius: 25px;
+    background: linear-gradient(40deg, #474747, #f54f4f);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    font-size: 11px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+  }
+input:hover + label,
+input:focus + label {
+  transform: scale(1.02);
+}
+input:focus + label {
+    outline: 1px solid #000;
+    outline: -webkit-focus-ring-color auto 2px;
+  }
+
+.imgprofile{
+    border-radius: 150px;
+    width: 40px;
+    height: 40px;
+}
+
+.imgprofile2{
+    border-radius: 150px;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 1px;
+    border: 2px solid #0063f7;
+    float: left;
+}
+ /*Boton de reacciones*/
+ .reactions{
+    height: auto;
+    max-height: 50px;
+    width: 100%;
+    min-width: 10px;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .botonreac {
+    min-width: 10px;
+    max-width: 50px;
+    font-size: 13px;
+    color: red;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 5px 7px;
+    background: transparent;
+  }
+  
+  .botonreac:hover {
+    box-shadow: 2px 2px 15px rgb(153, 55, 55) inset;
+  }
+  
+  .botonreac:active {
+    box-shadow: 2px 2px 20px rgb(153, 55, 55) inset;
+  }
+  .commentpost{
+      padding-left: 20px;
+      padding-top: 5px;
+      float: center;
+  }
+  
+  .comment:focus{
+    border: 1px solid #0063f7;
+    box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+    background-color: #1e1d1f;
+  }
+  #contenido{
+    background-color: #1e1d1f;color:white; border-radius:25px; border-color:#1e1d1f;
+    min-width: 300px;
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+  }
+  @media(max-width: 300px){
+    .comment:focus{
+        width: 100%;
+    }
+}
+.form-control{
+    min-width: 210px;
+    height: auto;
+    width: 100%;
+}

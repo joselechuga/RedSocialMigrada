@@ -1,0 +1,81 @@
+
+body{
+    background-image: url(../imagenes/Fondos/bk_carru.png);
+}
+
+
+.iz{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.796);
+    border: 1px solid #7b141417;
+}
+
+.de{
+    background-color: brown;
+}
+
+a,.nombnrechatuno , .horachat_uno{
+    text-decoration:none;
+}
+
+.container{
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.nombreschats{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   
+}
+
+.imgchats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+}
+
+h2{
+    position: relative;
+    left: 33%;
+}
+
+
+.cajabotones{
+    border: 1px solid blue;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.imagendelchatcaja_uno{
+    border-radius: 150px;
+}
+
+#chat1{
+    width: 95%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(164, 34, 34, 39);
+}
+
+
+
+
+/*Fuente de letras formulario*/
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+.letraform{
+    font-family: 'Orelega One', cursive;
+    font-size: 30px;
+    color: aliceblue;
+    -webkit-text-stroke: 2px black;
+}

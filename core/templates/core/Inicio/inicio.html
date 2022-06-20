@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <title>Inicio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS y logo-->
+    <link rel="stylesheet" href="{% static 'core/css/inicio.css' %}">
+    <link rel="icon" href="{% static 'core/img/logos/LOGO1_2.png' %}">
+
+
+  </head>
+  <body>
+    <!--Barra de navegación-->
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!--MENU DE SELECCIONES-->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">KAI</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+            aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Más opciones
+                </a>
+                
+                <!--RELLENAR CON BOTONES EXTRAS -->
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="{% url 'inicio' %}">Inicio</a></li>
+                  <li><a class="dropdown-item" href="{% url 'chat' %}">Chat</a></li>
+                  <li><a class="dropdown-item" href="{% url 'ayuda' %}">Ayuda</a></li>
+                  <li><a class="dropdown-item" href="{% url 'index' %}">Cerrar sesión</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link " href="{% url 'api' %}">Consulta precio de RP</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <!--Secciones de la página-->
+    <div class="secciones" class="row">
+        <div class="explorar">
+            <div class="menu">
+                <dl>
+                    <dt><img src="{% static 'core/img/icons/perfil.png' %}" width="30"><a href="{% url 'perfil' %}">  |  Perfil</a>
+                    <dt><img src="{% static 'core/img/icons/ayuda.png' %}" width="30"><a href="{% url 'ayuda' %}"> |  Ayuda</a>
+                </dl>
+            </div>
+        </div>
+        <div class="publicaciones"> 
+                    <!--Publicacion nueva y botón-->
+                <div id="newpost">
+                    <form>             
+                        <div class="poster">
+                            <img  class="imgprofile" src="{% static 'core/img/imgchat/elmo.jpg' %}" align="left">&nbsp;
+                            <div class="form-group green-border-focus" class="newpost">
+                                <label for="exampleFormControlTextarea5"></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea5" rows="1" placeholder="¿En qué estás pensando?"></textarea>                               
+                            </div>
+                        </div>
+                        <div class="botoness">
+                            <div id="archivo"class="file-input">
+                                <input type="file" id="file" class="file">
+                                <label for="file">Subir archivo</label>
+                            </div>                      
+                            <div align="right" class="botom">
+                                <button type="submit" class="botonxd">Publicar</button> 
+                            </div>                       
+                        </div>
+                    </form>                         
+                </div>  
+                    <!---Publicaciones antiguas-->
+                    <hr color="red"><br>
+                    <div class="posted">
+                        <div>
+                            <img class="imgprofile2" src="{% static 'core/img/imgchat/stitch.png' %}">
+                        </div>
+                        &nbsp;&nbsp;
+                        <div class="nameuser">
+                            <cite title="Source Title">JoseLechuga</cite>
+                            <cite title="Source Title" style="color: white; font-size: 12px;" >&nbsp;Hace 1 hora </cite>
+                        </div><br><br>
+                        <div class="contentpost">
+                            <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                                Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor 
+                                (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y 
+                                los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, 
+                                sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. 
+                                Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, 
+                                y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                            </p>
+                            <img class="contentpost" src="{% static 'core/img/Fondos/dragon2.jpg' %}">
+                        </div>
+                        <div class="reactions">
+                            <div class="like">
+                                <button type="submit" class="botonreac">Like</button> 
+                            </div>&nbsp;&nbsp;
+                            <div class="nolike">
+                                <button type="submit" class="botonreac">Unlike</button> 
+                            </div><br>
+                        </div>
+                        <!--ORDENAR Y CREAR PROPIO MODELO DE COMENTARIO SIGUIENDO LA LOGICA DE COMO FUE CREADO EL POST NUEVO-->
+                        <div id="newpost">
+                            <form>                
+                                <div class="poster">
+                                    <img  class="imgprofile" src="{% static 'core/img/imgchat/elmo.jpg' %}" align="left">&nbsp;
+                                    <div class="form-group green-border-focus" class="newpost">
+                                        <label for="exampleFormControlTextarea5"></label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea5" rows="1" placeholder="¿En qué estás pensando?"></textarea>                               
+                                    </div>
+                                </div>
+                                <div class="botoness">                      
+                                    <div align="right" class="botom">
+                                        <button type="submit" class="botonxd">Publicar</button> 
+                                    </div>
+                                </div>
+                            </form>                     
+                        </div>    
+                    </div>
+                     <!--Cargando-->
+                     <div class="cargando">
+                        <div class="chaotic-orbit"></div>
+                    </div>
+        </div>
+        <div class="noticias" class="row">
+            <h3>Noticias</h3>
+            <p>LOL</p>
+            <hr color="red">
+            <h3>Noticias</h3>
+            <p>APEX</p>
+            <hr color="red">
+            <h3>Noticias - Valorant</h3>
+            <p>La nueva agente "Fade", ya ha sido lanzada en la última actualización. Has click aquí para ver más detalle.</p>
+        </div>
+        
+    </div>   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+<!--
+    TODO:
+    - Alargar barra de comentario/publicación
+    - Poner al medio la animación de cargando
+    - Poner botón de "ver más", en el texto
+    - Hacer botón de "comentar"
+    - Mantener secciones de noticias y perfil arriba mientras se hace scroll a la página
+-->

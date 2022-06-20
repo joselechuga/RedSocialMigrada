@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  {% load static %}
+  <title>Perfil</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="{% static 'core/img/logos/LOGO1_2.png' %}">
+  <link rel="stylesheet" href="{% static 'core/css/perfil.css' %}">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="barranav">
+    <!-- Barra navegación-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <!--MENU DE SELECCIONES-->
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">KAI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+          aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Más opciones
+              </a>
+              
+              <!--RELLENAR CON BOTONES EXTRAS -->
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="{% url 'inicio' %}">Inicio</a></li>
+                <li><a class="dropdown-item" href="{% url 'chat' %}">Chat</a></li>
+                <li><a class="dropdown-item" href="{% url 'ayuda' %}">Ayuda</a></li>
+                <li><a class="dropdown-item" href="{% url 'index' %}">Cerrar sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link " href="{% url 'api' %}">Consulta precio de RP</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  </div>
+  <!--FIN-->
+  </div>
+  <div class="section">
+    <div class="links">
+      <table>
+        <thead>
+          <tr>
+            <th>Redes</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://twitch.tv/kodwell1"><img src="{% static 'core/img/logos/twitch.png' %}" target="_blank"
+                  width="30"></a></td>
+            <td><a href="https://twitch.tv/kodwell1" target="_blank"> | Kodwell1</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.reddit.com/user/Kodwell"><img src="{% static 'core/img//logos/reddit.png' %}" target="_blank"
+                  width="30"></a></td>
+            <td><a href="https://www.reddit.com/user/Kodwell" target="_blank"> | Kodwell1</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://trovo.live/Kodwell"><img src="{% static 'core/img/logos/trovo.png' %}" target="_blank"
+                  width="30"></a></td>
+            <td><a href="https://trovo.live/Kodwell" target="_blank"> | Kodwell</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://discord.gg/nxbet6WT"><img src="{% static 'core/img/logos/discord.png' %}" target="_blank"
+                  width="30"></a></td>
+            <td><a href="https://discord.gg/nxbet6WT" target="_blank"> | Kodwell's House</a></td>
+          </tr>
+          <tr>
+            <td><a href=""><img src="{% static 'core/img//logos/riot.png' %}" target="_blank" width="30"></a></td>
+            <td><a href="" target="_blank"> | Kodwell</a></td>
+          </tr>
+          <tr>
+            <td><a href=""><img src="{% static 'core/img/logos/battle.net.png' %}" target="_blank" width="30"></a></td>
+            <td><a href="" target="_blank"> | Kodwell</a></td>
+          </tr>
+          <tr>
+            <td><a href=""><img src="{% static 'core/img//logos/epic.png' %}" target="_blank" width="30"></a></td>
+            <td><a href="" target="_blank"> | Kodwell1</a></td>
+          </tr>
+        <tbody>
+      </table>
+    </div>
+
+    <div class="profileuser">
+      <div class="profileimages">
+        <div><img src="{% static 'core/img/Fondos/dragon3.jpg' %}" class="imageportada" alt="Portada"></div>
+      </div>
+      <div class="username">
+        <div><img src="{% static 'core/img/imgchat/elmo.jpg' %}" class="imageuser" alt="Perfil"></div>
+        <div align="right" class="botom">
+          <button type="submit" class="botonxd">Seguir</button>
+        </div>
+        <h2>Matías Vásquez <cite title="Source Title"> | Kodwell</cite></h2>
+        <p style="color: rgb(129, 129, 129)"><strong>@Kodwell</p></strong><br><br>
+        <p><strong>Descripción</strong></p>
+        <p>Hola, juego Valorant, Fortnite y Csgo. Transmito online y le pongo empeño, sígueme:)</p>
+      </div>
+      <div class="estadistics">
+        <cite title="Source Title">15 Siguiendo&nbsp;&nbsp;|&nbsp;&nbsp;</cite>
+        <cite title="Source Title">201 Seguidores&nbsp;&nbsp;|&nbsp;&nbsp;</cite>
+        <cite title="Source Title">2 Publicaciones&nbsp;&nbsp;|&nbsp;&nbsp;</cite>
+        <cite title="Source Title">305 Me gusta</cite>
+      </div><br>
+      <hr>
+      <!--Nueva publicación-->
+      <div>
+        <img class="imgprofile" src="{% static 'core/img/imgchat/elmo.jpg' %}">
+        <form>
+          <div class="form-group green-border-focus" class="newpost">
+            <label for="exampleFormControlTextarea5"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea5" rows="1"
+              placeholder="¿En qué estás pensando?"></textarea>
+          </div>
+          <div class="botoness">
+            <div id="archivo" class="file-input">
+              <input type="file" id="file" class="file">
+              <label for="file">Subir archivo</label>
+            </div>
+            <div align="right" class="botom">
+              <button type="submit" class="botonxd">Publicar</button>
+            </div>
+        </form>
+      </div>
+    </div><br>
+    <hr>
+    <!--publicaciones hechas en el perfil-->
+    <div>
+      <div>
+        <img class="imgprofile2" src="{% static 'core/img/imgchat/stitch.png' %}">
+      </div>
+      <div class="nameuser">
+        <cite title="Source Title">&nbsp;&nbsp;JoseLechuga</cite>
+        <cite title="Source Title" style="color: white; font-size: 12px;">&nbsp;Hace 1 hora </cite>
+      </div>
+      <div class="contentpost">
+        <p>Oye manquito, ¿cuándo vamos a jugar?</p>
+      </div>
+      <div class="reactions">
+        <div class="like">
+          <button type="submit" class="botonreac">Like</button>
+        </div>&nbsp;&nbsp;
+        <div class="nolike">
+          <button type="submit" class="botonreac">Unlike</button>
+        </div><br>
+      </div>
+    </div>
+    <br>
+    <hr><br>
+    <div>
+      <div>
+        <img class="imgprofile2" src="{% static 'core/img/imgchat/rodri.png' %}">
+      </div>
+      <div class="nameuser">
+        <cite title="Source Title">&nbsp;&nbsp;Rodri</cite>
+        <cite title="Source Title" style="color: white; font-size: 12px;">&nbsp;Hace 2 horas </cite>
+      </div>
+      <div class="contentpost">
+        <p>¿Quieres ser tu propio jefe?</p>
+      </div>
+      <div class="reactions">
+        <div class="like">
+          <button type="submit" class="botonreac">Like</button>
+        </div>&nbsp;&nbsp;
+        <div class="nolike">
+          <button type="submit" class="botonreac">Unlike</button>
+        </div><br>
+      </div>
+    </div>
+    <br>
+    <hr><br>
+    <div>
+      <div>
+        <img class="imgprofile2" src="{% static 'core/img/imgchat/fufu.png' %}">
+      </div>
+      <div class="nameuser">
+        <cite title="Source Title">&nbsp;&nbsp;Irux</cite>
+        <cite title="Source Title" style="color: white; font-size: 12px;">&nbsp;Hace 3 días </cite>
+      </div>
+      <div class="contentpost">
+        <p>Sígueme en Twitch!</p>
+        <img src="{% static 'core/img/logos/twitch.png' %}" alt="Post">
+      </div>
+      <div class="reactions">
+        <div class="like">
+          <button type="submit" class="botonreac">Like</button>
+        </div>&nbsp;&nbsp;
+        <div class="nolike">
+          <button type="submit" class="botonreac">Unlike</button>
+        </div><br>
+      </div>
+    </div>
+
+  </div>
+  <div class="suggestions" class="row">
+    <table>
+      <thead>
+        <tr>
+          <th>¡Únete a estas comunidades!</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>League of Legends</td>
+          <td>
+            <div class="like">
+              <button type="submit" class="botonreac">Unirse</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Valorant</td>
+          <td>
+            <div class="like">
+              <button type="submit" class="botonreac">Unirse</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Call of Duty: Warzone</td>
+          <td>
+            <div class="like">
+              <button type="submit" class="botonreac">Unirse</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Apex Legends</td>
+          <td>
+            <div class="like">
+              <button type="submit" class="botonreac">Unirse</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>CSGO</td>
+          <td>
+            <div class="like">
+              <button type="submit" class="botonreac">Unirse</button>
+            </div>
+          </td>
+        </tr>
+      <tbody>
+    </table>
+  </div>
+
+
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
