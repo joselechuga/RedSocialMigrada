@@ -14,20 +14,20 @@
   </head>
   <body>
 
-    <div class="container">
-        <h1>LISTA DE SEGUIDORES</h1>
 
-        <div class="overflow-auto">
-            <div class="container-fluid l1">
-                {% for i in usuarios %}
-                <div class="container-fluid l2">
-                    <h4 class="usuario">{{i.usuario}}</h4>
-                </div>
-                {% endfor %}
-            </div>
+
+    <div class="bt3">
+        <div class="titulousuarios">
+            <h1 class="x1">LISTADO SEGUIDORES</h1>
         </div>
+        <div class="bt1 overflow-auto">
+            {% for i in usuarios %}
+            <div class="bt2">
+                <h4>{{i.usuario}}</h4>
+                <img src="{% static 'core/img/Fondos/reddragon.jpg' %}" alt="">
+            </div>
+            {% endfor %}
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 

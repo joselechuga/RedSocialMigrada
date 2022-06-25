@@ -2,7 +2,64 @@ body{
     background-color: rgb(48,48 ,48 );
 }
 
-h1,h4{
+h1{
     color: aliceblue;
 }
 
+h4{
+    color: black;
+}
+
+.titulousuarios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+    border-radius: 10px;
+    margin: 0 5% 0 5%;
+    height: 600px;
+}
+
+.bt3 {
+    margin: 40px 8% 20px 8%;
+    background-image: linear-gradient(to left bottom, #411717, #6c2525, #9b3334, #cc4243, #ff5252);
+    border-radius: 15px;
+    height: 100%;
+    padding-bottom: 2em;
+
+}
+
+.bt2 {
+    height: 10%;
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-image: linear-gradient(to left bottom, #bbb4b4, #cbc6c7, #dbd8da, #ebeaec, #fdfdfd);
+    box-shadow: 5px 5px 5px 5px #00000065;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bt2 h1 {
+    margin: 1%;
+}
+
+.bt1::-webkit-scrollbar {
+    display: none;
+}
+
+.b1 {
+    -ms-overflow-style: none;
+}
+
+img{
+    width: 30em;
+    border-radius: 10px ;
+}

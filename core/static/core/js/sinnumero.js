@@ -14,6 +14,7 @@
   // Por último, nuestra función que verifica si el campo es válido antes de realizar cualquier otra acción.
     if (!input ) {
       alert('El campo no es válido.');
+      
     } else {
       alert('El campo es válido');
     }

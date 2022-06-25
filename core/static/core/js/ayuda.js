@@ -99,25 +99,26 @@ $(document).ready(function() {
 
         
         if ($("#nombre").val().length < 10) {
+            // El input que queremos validar
+            const input = document.forms['validationForm']['nombre'];
+        
+            // El pattern que vamos a comprobar
+            const pattern = new RegExp('^[A-Z-a-z_-]+$', 'i');
+    
+
             alert("Debe indicar su nombre y apellido.");
             $("#nombre").css({ background: "#fe8c8c" });
             $(".sn_nomap").show().css({ color: "red" });
             $(".error_nombre").hide();
+
+            if (input != pattern ) {
+                alert('SOLO LETRAS EN EL CAMPO "NOMBRE"');
+              } 
             return false;
         }
 
 
-        // El input que queremos validar
-        const input = document.forms['validationForm']['nombre'];
-    
-        // El pattern que vamos a comprobar
-        const pattern = new RegExp('^[A-Z]+$', 'i');
-    
-      // Por último, nuestra función que verifica si el campo es válido antes de realizar cualquier otra acción.
-        if (input != pattern ) {
-          alert('SOLO LETRAS EN EL CAMPO "NOMBRE"');
-          return false;
-        } 
+
 
         //Correo
 
