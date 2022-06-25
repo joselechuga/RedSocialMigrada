@@ -20,7 +20,7 @@ h4{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+    background-image: url(../img/Fondos/fondoseguidores2.jpg);
     border-radius: 10px;
     margin: 0 5% 0 5%;
     height: 600px;
@@ -28,7 +28,7 @@ h4{
 
 .bt3 {
     margin: 40px 8% 20px 8%;
-    background-image: linear-gradient(to left bottom, #411717, #6c2525, #9b3334, #cc4243, #ff5252);
+    background-image: linear-gradient(to bottom, #741212, #7a1817, #801d1d, #852322, #8b2828, #8e2827, #922727, #952726, #97201e, #991816, #9a0e0c, #9b0000);
     border-radius: 15px;
     height: 100%;
     padding-bottom: 2em;
@@ -44,7 +44,7 @@ h4{
     background-image: linear-gradient(to left bottom, #bbb4b4, #cbc6c7, #dbd8da, #ebeaec, #fdfdfd);
     box-shadow: 5px 5px 5px 5px #00000065;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .bt2 h1 {
@@ -60,6 +60,6 @@ h4{
 }
 
 img{
-    width: 30em;
+
     border-radius: 10px ;
 }
