@@ -1,6 +1,6 @@
-from ast import pattern
+
 from django.urls import path
-from .views import index,regUsuario,recContra,inicio,perfil,apirest,paginaAyuda,ayuda,chat
+from .views import index,regUsuario,recContra,inicio,perfil,apirest,paginaAyuda,ayuda,chat,listaSeguidores
 
 urlpatterns = [
     path('',index,name="index"),
@@ -11,6 +11,7 @@ urlpatterns = [
     path('precioRp/',apirest, name="api"),
     path('ayuda/',paginaAyuda, name="ayuda"),
     path('ayuda2/', ayuda, name="ayuda2"),
-    path('chat/',chat,name="chat")
+    path('chat/',chat,name="chat"),
+    path('lista-seguidores/',listaSeguidores,name="listaSeguidores"),
     
 ]

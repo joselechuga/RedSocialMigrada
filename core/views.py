@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .models import usuarios
 
 # Create your views here.
 
@@ -29,3 +29,13 @@ def ayuda(request):
 
 def chat(request):
     return render(request,'core/Mensajeria/chat.html')
+
+def listaSeguidores(request):
+
+    usuario = usuarios.objects.all()
+
+    datos = {
+        "usuarios":usuario
+    }
+
+    return render(request,'core/perfil/listaSeguidores.html',datos)
