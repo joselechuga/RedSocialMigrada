@@ -30,27 +30,17 @@
 
                 <!-- #login -->
                 <form action="#">
-                    <div class="mb-4">
-                        <label for="email" class="form-label "style="color: aliceblue;">Correo electrónico</label>
-                        <input type="email" class="form-control" name="email"placeholder="Ingresa tu correo electrónico">
-                    </div>
-                    <div class="mb-4">
-                        <label for="password" class="form-label" style="color: aliceblue;">Contraseña</label>
-                        <input type="password" class="form-control"  name="password" placeholder="Ingresa tu Contraseña">
-                    </div>
-                    <div class="mb-4 form-check">
-                        <input type="checkbox" name="connected" class="form-check-input">
-                        <label for="connected" class="form-check-label"style="color: aliceblue;">Recordar usuario</label>
-                    </div>
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-primary"><a href="{% url 'inicio' %}" style="color: aliceblue;">Inicia sesión</a></button>
+                        <button type="submit" class="btn btn-primary"><a href="{% url 'login' %}" style="color: aliceblue;">Inicia sesión</a></button>
                     </div>
-                    <form action="#">
-                        <div class="mb-4">
-                            <span><a href="{% url 'registroUsuario' %}">Registro usuario</a></span>
-                            <span><a href="{% url 'recuperarContrasena' %}">Recuperar contraseña</a></span>
-                        </div>
-                    </form>
+                    <br>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary"><a href="{% url 'register' %}" style="color: aliceblue;">Registrate</a></button>
+                    </div>
+                    <br>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary"><a href="{% url 'recuperarContrasena' %}" style="color: aliceblue;">Recuperar Contraseña</a></button>
+                    </div>
                 </form>
                 <!-- #Login Con Redes Sociales -->
                 <div class="conteiner w-100 my-5">
