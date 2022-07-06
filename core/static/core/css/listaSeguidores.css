@@ -44,7 +44,9 @@ h4{
     background-image: linear-gradient(to right, #cfcfcf, #c6c6c6, #bdbcbd, #b4b3b3, #abaaaa, #a7a6a6, #a3a2a2, #9f9e9e, #9f9e9e, #9f9f9f, #9f9f9f, #9f9f9f);
     box-shadow: 5px 5px 5px 5px #00000065;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .bt2 h1 {
@@ -62,4 +64,13 @@ h4{
 img{
 
     border-radius: 10px ;
+}
+
+.perfil{
+
+    height: 3em;
+}
+
+.duser{
+    padding: 5px;
 }

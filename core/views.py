@@ -48,6 +48,15 @@ def listaSeguidores(request):
     }
 
     return render(request,'core/perfil/listaSeguidores.html',datos)
+
+def borrarUsuario(reques,id):
+
+    usuario = usuarios.objects.get(usuario=id)
+    usuario.delete()
+    return redirect(to='listaSeguidores')
+
+
+#REGISTRO Y LOGIN  
 def register(request):
     if request.method == 'POST':
         form=UserRegisterForm(request.POST)
