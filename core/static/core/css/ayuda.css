@@ -8,8 +8,7 @@ body{
 
 .contenedor{
     background-image: url(../img/Fondos/fondoformulario1.png);
-
-    height: 78vh;
+    height: 50vh;
     display: flex;
     justify-content: flex-end;
 }

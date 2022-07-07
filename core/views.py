@@ -36,6 +36,9 @@ def paginaAyuda(request):
 def ayuda(request):
     return render(request,'core/ayuda/ayuda2.html')
 
+def ayuda3(request):
+    return render(request,'core/ayuda/ayuda3.html')
+
 def chat(request):
     return render(request,'core/Mensajeria/chat.html')
 
