@@ -59,11 +59,46 @@
         <div class="container">
 
             <div class="izquierdo">
-                <h2>IZQUIERDO</h2>
+              
+              <div class="op1">
+                <button id="bt1" class="btn btn-primary bt1">MOSTRAR</button>
+              </div>
+
             </div>
 
-            <div class="row">
-                <h2>DERECHO</h2>
+            <div class="derecho">
+              
+              <div id="d1" class="d1">
+                <img src="{% static 'core/img/Fondos/fondoseguidores2.jpg' %}" alt="">
+              </div>
+
+
+              <!--FORMULARIO-->
+              <div id="d2" class="d2">
+                <div class="tayu"><h3>FORMULARIO DE AYUDA PERSONALIZADA</h3></div>
+                <form method="POST" action="" id="validationForm" name="validationForm">
+
+                  <!--NOMBRE-->
+                  <div class="form-group">
+                    <label for="nombre" class="form-check-label">Nombre y apellido</label>
+                    <input type="text" class="form-control" id="nombre">
+                  </div>
+
+                  <!--CORREO-->
+                  <div class="form-group">
+                    <label for=""class="form-check-label">Correo electronico</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="comentario">¿En que podemos ayudarte?</label>
+                    <textarea class="form-control cajacomentario" name="comentario" id="comentario" cols="70" rows="10"
+                      placeholder="Debe contener un minimo de 30 caracteres su comentario."></textarea>
+                  </div>
+
+                </form>
+              </div>
+                
             </div>
 
         </div>
@@ -74,5 +109,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="{% static 'core/js/ayuda2.js' %}"></script>
   </body>
 </html>
