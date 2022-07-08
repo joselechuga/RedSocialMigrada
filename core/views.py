@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import usuarios
+from .models import usuarios,Message,Room
 from contextvars import Context
 from email import message
 from multiprocessing import context
@@ -41,6 +41,16 @@ def ayuda3(request):
 
 def chat(request):
     return render(request,'core/Mensajeria/chat.html')
+
+def room(request, room):
+    username = request.GET.get('username')
+    room_details = Room.objects.get(name=room)
+    return render(request, 'core/Mensajeria/room.html', {
+        'username': username,
+        'room': room,
+        'room_details': room_details
+    })
+
 
 def listaSeguidores(request):
 

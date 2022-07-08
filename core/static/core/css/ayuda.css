@@ -6,6 +6,32 @@ body{
     flex-direction: column;
 }
 
+
+
+.c1{
+    display: flex;
+    border: 2px solid wheat;
+    height: 80vh;
+    justify-content: space-between;
+}
+
+.d1{
+
+    height: 2em;
+    width: 20vh;
+    background-color: #ad0b21;
+
+}
+
+.d2{
+    display: flex;
+    flex-direction: column;
+    height: 20em;
+    width: 20em;
+    border: 2px solid rgb(7, 141, 61);
+
+}
+
 .contenedor{
     background-image: url(../img/Fondos/fondoformulario1.png);
     height: 50vh;
@@ -37,11 +63,10 @@ body{
 }
 
 h1{
-    position: absolute;
     color: #fff;
-    top: 0%;
-    right: 20%;
+    font-family: 'Orelega One', cursive;
 }
+
 h3{
     font-family: 'Orelega One', cursive;
     font-size: 30px;
@@ -81,9 +106,9 @@ button {
     border-radius: 6px;
     font-weight: 500;
     color: var(--color);
-   }
-   
-   button:before {
+}
+
+button:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -91,32 +116,28 @@ button {
     height: 150px;
     width: 200px;
     border-radius: 50%;
-   }
-   
-   button:hover {
+}
+
+button:hover {
     color: #fff;
-   }
-   
-   button:before {
+}
+
+button:before {
     top: 100%;
     left: 100%;
     transition: all .7s;
-   }
-   
-   button:hover:before {
+}
+
+button:hover:before {
     top: -30px;
     left: -30px;
-   }
-   
-   button:active:before {
+}
+
+button:active:before {
     background: #a30c1e;
     transition: background 0s;
-   }
-
-   .contenedor2{
-    background-image: url(../imagenes/Fondos/fondoformulario2.png);
-    height: 100vh;
 }
+
 
 .limpiarformulario{
     position: absolute;

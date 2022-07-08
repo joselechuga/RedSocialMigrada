@@ -55,97 +55,83 @@
   </nav>
 
   
-
-  <div class="contenedor">
-   
-  <div id="cuadrofiltro" class="filtro">
-      
-      <div>
-        <button id="mostrar">Mostrar formulario</button>
-      </div>
-      <div class="letras">
-        <h1>Ayuda Personalizada</h1>
-      </div>
-      <div>
-        <h4>Click en "Mostrar formulario"y completa los datos requeridos para que podamos ayudarte. </h4>
-        <h5>Recuerda especificar lo mas a detalle posible tu comentario para asistir en tu ayuda de la mejor forma posible.</h5>
-
-      </div>
-      <div>
-        <button id="ocultar">ocultar formulario</button>
-      </div>
+  <div class="container">
+    <div>
+      <h1>Hola! esta es la pagina de ayuda</h1>
+      <h2></h2>
     </div>
-  </div>
 
+    <div class="c1">
 
-  <div id="contenedor2" class="contenedor2">
-    <div class="accordion-body fondo">
-      <div class="contorno">
-        <div class="container container-fluid p-3 relleno">
-          <!--FORMULARIO-->
-          <div class="container container-fluid p-4">
-            <form action="" id="validationForm" name="validationForm">
-              <!--NOMBRE-->
-              <div class="container">
-                <div class="mb-3">
-                  <label for="nombre">
-                    <p class="form-label letraform">Nombre y apellido</p>
-                  </label>
-                </div>
-                <div class="mb-3">
-                  <input id="nombre" type="text" class="form-control input nombre" placeholder="Ingresa tu nombre y apellido">
-                  <span class="nom_correcto">✔</span>
-                  
-                </div>
-                <!--ETIQUETAS DE ERRORES NOMBRE-->
-                <span class="sn_nomap" id="err1"> (*) Este campo es obligatorio</span>
-                <span class="error_nombre">Debe ingresar nombre y apellido</span>
-                <br>
-              </div>
+      <div class="d1">
+        
+      </div>
 
-              <!--CORREO-->
-              <div class="container">
-                <div>
-                  <label for="email">
-                    <p class="letraform">Correo Electronico</p>
-                  </label>
-                </div>
-                <div>
-                  <input id="email" type="email" class="form-control input" placeholder="Ingresa tu Correo ">
-                  <span id="success" style="display:none;color:green;">Correo válido ✔</span>
-                </div>
-                <!--ETIQUETAS DE ERRORES CORREO-->
-                <span id="error" style="display:none;color:red;">Correo no válido</span>
-                <span class="sn_correo" style="display:none;color:red;">Debe introducir su correo
-                  electrónico.</span>
-              </div>
+      <div class="d2">
 
-              <!--COMENTARIO-->
-              <div class="p-3">
-                <div>
-                  <label for="comentario" class="etiquetacom">
-                    <p class="letraform">COMENTARIO</p>
-                  </label>
-                </div>
-                <div>
-                  <span class="err_com" id="errorcomentario">( Debe contener 30 caracteres minimo.)</span>
-                </div>
-                <div>
-                  <textarea class="form-control cajacomentario" name="comentario" id="comentario" cols="70" rows="10"
-                    placeholder="Debe contener un minimo de 30 caracteres su comentario."></textarea>
-                </div>
-
-                <div class="p-4">
-                  <button type="submit" class="btn btn-light botonenvio" id="enviar">Enviar</button>
-                  <button type="reset" class="btn btn-light limpiarformulario" id="enviar">Limpiar formulario</button>
-                </div>
-              </div>
-            </form>
+        <form action="" id="validationForm" name="validationForm">
+          <!--NOMBRE-->
+          <div class="container">
+            <div class="mb-3">
+              <label for="nombre">
+                <p class="form-label letraform">Nombre y apellido</p>
+              </label>
+            </div>
+            <div class="mb-3">
+              <input id="nombre" type="text" class="form-control input nombre" placeholder="Ingresa tu nombre y apellido">
+              <span class="nom_correcto">✔</span>
+              
+            </div>
+            <!--ETIQUETAS DE ERRORES NOMBRE-->
+            <span class="sn_nomap" id="err1"> (*) Este campo es obligatorio</span>
+            <span class="error_nombre">Debe ingresar nombre y apellido</span>
+            <br>
           </div>
+  
+          <!--CORREO-->
+          <div class="container">
+            <div>
+              <label for="email">
+                <p class="letraform">Correo Electronico</p>
+              </label>
+            </div>
+            <div>
+              <input id="email" type="email" class="form-control input" placeholder="Ingresa tu Correo ">
+              <span id="success" style="display:none;color:green;">Correo válido ✔</span>
+            </div>
+            <!--ETIQUETAS DE ERRORES CORREO-->
+            <span id="error" style="display:none;color:red;">Correo no válido</span>
+            <span class="sn_correo" style="display:none;color:red;">Debe introducir su correo
+              electrónico.</span>
+          </div>
+  
+          <!--COMENTARIO-->
+          <div class="p-3">
+            <div>
+              <label for="comentario" class="etiquetacom">
+                <p class="letraform">COMENTARIO</p>
+              </label>
+            </div>
+            <div>
+              <span class="err_com" id="errorcomentario">( Debe contener 30 caracteres minimo.)</span>
+            </div>
+            <div>
+              <textarea class="form-control cajacomentario" name="comentario" id="comentario" cols="10" rows="10"
+                placeholder="Debe contener un minimo de 30 caracteres su comentario."></textarea>
+            </div>
+  
+            <div class="p-4">
+              <button type="submit" class="btn btn-light botonenvio" id="enviar">Enviar</button>
+              <button type="reset" class="btn btn-light limpiarformulario" id="enviar">Limpiar formulario</button>
+            </div>
+          </div>
+        </form>
 
-        </div>
       </div>
+
     </div>
+
+
   </div>
 
 

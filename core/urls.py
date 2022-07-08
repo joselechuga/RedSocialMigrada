@@ -3,7 +3,7 @@ from django import views
 from django.urls import URLPattern, path
 from django.contrib.auth.views import LoginView,LogoutView
 from . import views
-from .views import index,regUsuario,recContra,inicio,perfil,apirest,paginaAyuda,ayuda,ayuda3,chat,listaSeguidores,borrarUsuario,log,register
+from .views import index,regUsuario,recContra,inicio,perfil,apirest,paginaAyuda,ayuda,ayuda3,chat,room,listaSeguidores,borrarUsuario,log,register
 
 urlpatterns = [
     path('',index,name="index"),
