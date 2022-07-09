@@ -47,6 +47,7 @@ body{
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     margin: 1em;
     border-radius: 30px;
+    box-shadow: 10px 5px 5px black;
 
 }
 
@@ -57,21 +58,25 @@ h1{
 
 h3 ,h4,h5{
     font-size: 20w;
-    color: rgb(255, 255, 255);
-    font-family: 'Anton', sans-serif;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-family: 'Alfa Slab One', cursive;
+    /*font-family: 'Anton', sans-serif;*/
+
+}
+
+.imgins{
+    display: flex;
+    justify-content: center;
+}
+
+.img-i1{
+    border-radius: 30px;
 }
 
 .botones{
     display: flex;
     justify-content: space-around;
     margin: 1em;
-}
-.contenedor{
-    background-image: url(../img/Fondos/fondoformulario1.png);
-    height: 50vh;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .i1{
@@ -84,6 +89,7 @@ h3 ,h4,h5{
     flex-direction: column;
     border: 1px solid black;
     border-radius: 30px;
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
 }
 
 /* From uiverse.io by @mobinkakei */
