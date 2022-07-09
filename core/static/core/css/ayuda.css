@@ -7,7 +7,7 @@ body {
 
 .padre{
     height: 94vh;
-    background-image: url(../img/Fondos/fondoayudabs4.jpg);
+    background-image: url(../img/Fondos/fondoayudabs5.jpg);
     background-repeat: no-repeat;
 }
 
@@ -50,7 +50,7 @@ body {
     height: 45em;
     width: 40em;
     border: 2px solid rgb(141, 7, 7);
-    background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+    background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
     margin: 1em;
     border-radius: 30px;
     box-shadow: 10px 5px 5px black;
