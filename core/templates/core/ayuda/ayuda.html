@@ -100,19 +100,25 @@
         <!--CONTENIDO INSTRUCCIONES-->
 
         <div class="i1">
-          <div>
+          <div class="t2">
             <h4>Rellena el formulario con los datos correspondientes:</h4>
           </div>
 
-          <div>
+          <div class="t2">
             <h5>
               -Nombre y apellido<br>
               -Correo electronico <br>
             </h5>
           </div>
 
-          <div>
-            <h4>No olvides detallar lo mejor posible tu petición de ayuda en la caja de "Comentarios"</h4>
+          <div class="t2">
+            <h4>No olvides detallar lo mejor posible tu petición de ayuda en la caja:</h4>
+          </div>
+
+          <div class="t2">
+            <h4>
+              -Comentarios<br>
+            </h4>
           </div>
         </div>
 
@@ -120,7 +126,7 @@
 
           <div>
             <h3>
-              Tambien puedes pedir ayuda a nuestro chat que se muestra en la esquina derecha inferior
+              Tambien puedes pedir ayuda a nuestro chat que se muestra en la esquina inferior derecha 
             </h3>
             <div class="imgins">
               <img class="img-i1" src="{% static 'core/img/Logos/fca.png' %}" alt="">
@@ -137,8 +143,8 @@
           <!--NOMBRE-->
           <div class="container">
             <div class="mb-3">
-              <label for="nombre">
-                <p class="form-label letraform">Nombre y apellido</p>
+              <label class="form-label" for="nombre">
+                Nombre y apellido
               </label>
             </div>
             <div class="mb-3">
@@ -156,8 +162,8 @@
           <!--CORREO-->
           <div class="container">
             <div>
-              <label for="email">
-                <p class="letraform">Correo Electronico</p>
+              <label class="form-label" for="email">
+                Correo Electronico
               </label>
             </div>
             <div>
@@ -173,8 +179,8 @@
           <!--COMENTARIO-->
           <div class="p-3">
             <div>
-              <label for="comentario" class="etiquetacom">
-                <p class="letraform">COMENTARIO</p>
+              <label for="comentario" class="form-label etiquetacom">
+                COMENTARIO
               </label>
             </div>
             <div>
