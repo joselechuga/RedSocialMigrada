@@ -1,18 +1,17 @@
-
-body{
+body {
     background-image: linear-gradient(to right, #434343 0%, black 100%);
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.t1{
+.t1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.iconosplay{
+.iconosplay {
     display: flex;
     justify-content: center;
     margin: 2em;
@@ -20,15 +19,16 @@ body{
     border-radius: 30px;
 }
 
-.c1{
+.c1 {
     display: flex;
     height: 80vh;
     justify-content: space-between;
 }
 
-.d1{
+.d1 {
     height: 2em;
     width: 20vh;
+    background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
     height: 45em;
     width: 40em;
@@ -38,7 +38,7 @@ body{
 
 }
 
-.d2{
+.d2 {
     display: flex;
     flex-direction: column;
     height: 45em;
@@ -51,12 +51,19 @@ body{
 
 }
 
-h1{
+label {
+    font-family: 'Orelega One', cursive;
+    font-size: 2em;
+}
+
+h1 {
     color: #fff;
     font-family: 'Orelega One', cursive;
 }
 
-h3 ,h4,h5{
+h3,
+h4,
+h5 {
     font-size: 20w;
     color: rgb(0, 0, 0);
     font-family: 'Alfa Slab One', cursive;
@@ -64,22 +71,22 @@ h3 ,h4,h5{
 
 }
 
-.imgins{
+.imgins {
     display: flex;
     justify-content: center;
 }
 
-.img-i1{
+.img-i1 {
     border-radius: 30px;
 }
 
-.botones{
+.botones {
     display: flex;
     justify-content: space-around;
     margin: 1em;
 }
 
-.i1{
+.i1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,10 +96,14 @@ h3 ,h4,h5{
     flex-direction: column;
     border: 1px solid black;
     border-radius: 30px;
-    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
 }
 
-/* From uiverse.io by @mobinkakei */
+.t2 {
+    padding: 3px;
+}
+
+
 .loader {
     --path: #2f3545;
     --dot: #5628ee;
@@ -100,9 +111,9 @@ h3 ,h4,h5{
     width: 44px;
     height: 44px;
     position: relative;
-  }
-  
-  .loader:before {
+}
+
+.loader:before {
     content: '';
     width: 6px;
     height: 6px;
@@ -114,138 +125,140 @@ h3 ,h4,h5{
     left: 19px;
     transform: translate(-18px, -18px);
     animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-  }
-  
-  .loader svg {
+}
+
+.loader svg {
     display: block;
     width: 100%;
     height: 100%;
-  }
-  
-  .loader svg rect, .loader svg polygon, .loader svg circle {
+}
+
+.loader svg rect,
+.loader svg polygon,
+.loader svg circle {
     fill: none;
     stroke: var(--path);
     stroke-width: 10px;
     stroke-linejoin: round;
     stroke-linecap: round;
-  }
-  
-  .loader svg polygon {
+}
+
+.loader svg polygon {
     stroke-dasharray: 145 76 145 76;
     stroke-dashoffset: 0;
     animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-  }
-  
-  .loader svg rect {
+}
+
+.loader svg rect {
     stroke-dasharray: 192 64 192 64;
     stroke-dashoffset: 0;
     animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-  }
-  
-  .loader svg circle {
+}
+
+.loader svg circle {
     stroke-dasharray: 150 50 150 50;
     stroke-dashoffset: 75;
     animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-  }
-  
-  .loader.triangle {
+}
+
+.loader.triangle {
     width: 48px;
-  }
-  
-  .loader.triangle:before {
+}
+
+.loader.triangle:before {
     left: 21px;
     transform: translate(-10px, -18px);
     animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-  }
-  
-  @keyframes pathTriangle {
+}
+
+@keyframes pathTriangle {
     33% {
-      stroke-dashoffset: 74;
+        stroke-dashoffset: 74;
     }
-  
+
     66% {
-      stroke-dashoffset: 147;
+        stroke-dashoffset: 147;
     }
-  
+
     100% {
-      stroke-dashoffset: 221;
+        stroke-dashoffset: 221;
     }
-  }
-  
-  @keyframes dotTriangle {
+}
+
+@keyframes dotTriangle {
     33% {
-      transform: translate(0, 0);
+        transform: translate(0, 0);
     }
-  
+
     66% {
-      transform: translate(10px, -18px);
+        transform: translate(10px, -18px);
     }
-  
+
     100% {
-      transform: translate(-10px, -18px);
+        transform: translate(-10px, -18px);
     }
-  }
-  
-  @keyframes pathRect {
+}
+
+@keyframes pathRect {
     25% {
-      stroke-dashoffset: 64;
+        stroke-dashoffset: 64;
     }
-  
+
     50% {
-      stroke-dashoffset: 128;
+        stroke-dashoffset: 128;
     }
-  
+
     75% {
-      stroke-dashoffset: 192;
+        stroke-dashoffset: 192;
     }
-  
+
     100% {
-      stroke-dashoffset: 256;
+        stroke-dashoffset: 256;
     }
-  }
-  
-  @keyframes dotRect {
+}
+
+@keyframes dotRect {
     25% {
-      transform: translate(0, 0);
+        transform: translate(0, 0);
     }
-  
+
     50% {
-      transform: translate(18px, -18px);
+        transform: translate(18px, -18px);
     }
-  
+
     75% {
-      transform: translate(0, -36px);
+        transform: translate(0, -36px);
     }
-  
+
     100% {
-      transform: translate(-18px, -18px);
+        transform: translate(-18px, -18px);
     }
-  }
-  
-  @keyframes pathCircle {
+}
+
+@keyframes pathCircle {
     25% {
-      stroke-dashoffset: 125;
+        stroke-dashoffset: 125;
     }
-  
+
     50% {
-      stroke-dashoffset: 175;
+        stroke-dashoffset: 175;
     }
-  
+
     75% {
-      stroke-dashoffset: 225;
+        stroke-dashoffset: 225;
     }
-  
+
     100% {
-      stroke-dashoffset: 275;
+        stroke-dashoffset: 275;
     }
-  }
-  
-  .loader {
+}
+
+.loader {
     display: inline-block;
     margin: 0 16px;
-  }
-  
-   
+}
+
+
 
 
 
@@ -301,14 +314,15 @@ button:active:before {
 }
 
 
-.limpiarformulario{
+.limpiarformulario {
     position: absolute;
     left: 30%;
 }
 
 /*Fuente de letras formulario*/
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
-.letraform{
+
+.letraform {
     font-family: 'Orelega One', cursive;
     font-size: 30px;
     color: aliceblue;
@@ -331,7 +345,7 @@ button:active:before {
 
 
 
-.cajacomentario{
+.cajacomentario {
     border: 3px solid rgb(127, 170, 170);
     border-radius: 20px;
     background-color: rgb(77, 75, 75);
@@ -343,7 +357,7 @@ button:active:before {
 }
 
 
-#nombre{
+#nombre {
     border: 3px solid rgb(127, 170, 170);
     border-radius: 20px;
     background-color: rgb(77, 75, 75);
@@ -354,19 +368,7 @@ button:active:before {
     transition: all 1s;
 }
 
-#email{
-    border: 3px solid rgb(127, 170, 170);
-    border-radius: 20px;
-    background-color: rgb(77, 75, 75);
-    cursor: pointer;
-    padding: 7px 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    transition: all 1s;
-}
-
-
-#comentario{
+#email {
     border: 3px solid rgb(127, 170, 170);
     border-radius: 20px;
     background-color: rgb(77, 75, 75);
@@ -378,10 +380,23 @@ button:active:before {
 }
 
 
-.r1a{
+#comentario {
+    border: 3px solid rgb(127, 170, 170);
+    border-radius: 20px;
+    background-color: rgb(77, 75, 75);
+    cursor: pointer;
+    padding: 7px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 1s;
+}
+
+
+.r1a {
     display: flex;
     justify-content: center;
 }
-.titulo1{
+
+.titulo1 {
     color: aliceblue;
 }
