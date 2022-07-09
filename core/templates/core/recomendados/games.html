@@ -1,87 +1,176 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Recomendaciones</title>
+    {% load static %}
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{% static 'core/css/games.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
+    <link rel="stylesheet" href="{% static 'core/css/games.css' %}">
+</head>
   <body>
-    <div class="tarjeta">
-        <div class="Titulo">
-            <div class="info">
+      
+     
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">KAI</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+            aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Más opciones
+                </a>
+                
+                <!--RELLENAR CON BOTONES EXTRAS -->
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="{% url 'inicio' %}">Inicio</a></li>
+                  <li><a class="dropdown-item" href="{% url 'chat' %}">Chat</a></li>
+                  <li><a class="dropdown-item" href="{% url 'ayuda' %}">Ayuda</a></li>
+                  <li><a class="dropdown-item" href="{% url 'games' %}">juegos de la comunidad</a></li>
+                  <li><a class="dropdown-item" href="{% url 'index' %}">Cerrar sesión</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link " href="{% url 'api' %}">Consulta precio de RP</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <div class="container">
+        <div class="tarjeta">
+            <div class="Titulo">
+                <div class="info">
+                    <div>
+                        <h1 class="badge">Los mejores juegos de la comunidad</h1>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="overflow-auto juegos">
+
                 <div>
-                    <h1 class="badge">LOS MEJORES</h1>
-                    <h1 class="badge">Juegos de la comunidad</h1>
+                    <!-- Numero 1 -->
+                    <div class="card">
+                        <div class="face front">
+                            <img src="{% static 'core/img/games/valorant.jpg' %}" alt="">
+                            <h3>Valorant</h3>
+                        </div>
+                        <div class="face back">
+                            <h3>Valorant</h3>
+                            <p>Valorant es un juego de disparos en primera persona en el que dos equipos de cinco
+                                jugadores se enfrentan entre ellos.</p>
+                            <div class="link">
+                                <a href="https://playvalorant.com/es-mx/?gclsrc=aw.ds&gclid=CjwKCAjwq5-WBhB7EiwAl-HEktcu2Il6thpS7tGYZGuc2t3tAdXPE8oZJsbi7yn6rZ6UHKr-JuBWERoC7j4QAvD_BwE">Mas detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Numero 2 -->
+                    <div class="card">
+                        <div class="face front">
+                            <img src="{% static 'core/img/games/apex.jpg' %}" alt="">
+                            <h3>Apex</h3>
+                        </div>
+                        <div class="face back">
+                            <h3>Apex Legends</h3>
+                            <p>Apex Legends es un videojuego gratuito perteneciente a los géneros battle royale y hero
+                                shooter en primera persona</p>
+                            <div class="link">
+                                <a href="https://store.steampowered.com/app/1172470/Apex_Legends/">Mas detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+
+                    <!-- Numero 3 -->
+                    <div class="card">
+                        <div class="face front">
+                            <img src="{% static 'core/img/games/paladins.jpg' %}" alt="">
+                            <h3>Paladins</h3>
+                        </div>
+                        <div class="face back">
+                            <h3>Paladins</h3>
+                            <p>Paladins: Champions of the Realm es un videojuego gratuito en línea de disparos en
+                                primera persona con componentes de hero shooter.</p>
+                            <div class="link">
+                                <a href="#">Mas detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Numero 4 -->
+                    <div class="card">
+                        <div class="face front">
+                            <img src="{% static 'core/img/games/smite.jpg' %}" alt="">
+                            <h3>Hi Rez Studios</h3>
+                        </div>
+                        <div class="face back">
+                            <h3>SMITE</h3>
+                            <p>SMITE es un videojuego de acción MOBA en tercera persona, creado y publicado por Hi-Rez
+                                Studios para Microsoft Windows, Xbox One, PlayStation 4 y Nintendo Switch.</p>
+                            <div class="link">
+                                <a href="#">Mas detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <!-- Numero 1 -->
+                        <div class="card">
+                            <div class="face front">
+                                <img src="{% static 'core/img/games/dbd.jpg' %}" alt="">
+                                <h3>Dead by Daylight</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>Dead by Daylight</h3>
+                                <p>Dbd es un juego de supervivencia de horror 
+                                    , 4 supervivientes contra un asesino 
+                                    despiadado queriendo acabar con sus vidas sacrificandolos al ente.</p>
+                                <div class="link">
+                                    <a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/">Mas detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Numero 2 -->
+                        <div class="card">
+                            <div class="face front">
+                                <img src="{% static 'core/img/games/lol.jpg' %}" alt="">
+                                <h3>Apex</h3>
+                            </div>
+                            <div class="face back">
+                                <h3>League of legends</h3>
+                                <p>
+                                    League of Legends es un videojuego del género multijugador de arena de batalla en línea y deporte electrónico el cual fue desarrollado por Riot Games para Microsoft Windows y OS X. En un principio los servidores estaban alojados en la empresa GOA y fue vendida a la empresa china Tencent Holdings Limited.
+                                </p>
+                                <div class="link">
+                                    <a href="#">Mas detalles</a>
+                                </div>
+                            </div>
+                        </div>
                 </div>
 
             </div>
 
-        </div>
 
-        <!-- Numero 1 -->
-        <div class="card">
-            <div class="face front">
-                <img src="{% static 'core/Games/valorant.jpg' %}" alt="">
-                <h3>Riot Games</h3>
-            </div>
-            <div class="face back">
-                <h3>Valorant</h3>
-                <p>Valorant es un juego de disparos en primera persona en el que dos equipos de cinco jugadores se enfrentan entre ellos.</p>
-                <div class="link">
-                    <a href="#">Mas detalles</a>
-                </div>
-            </div>
-        </div>
-        <!-- Numero 2 -->
-        <div class="card">
-            <div class="face front">
-                <img src="{% static 'core/Games/apex.jpg' %}" alt="">
-                <h3>Respawn Entertainment</h3>
-            </div>
-            <div class="face back">
-                <h3>Apex Legends</h3>
-                <p>Apex Legends es un videojuego gratuito perteneciente a los géneros battle royale y hero shooter en primera persona</p>
-                <div class="link">
-                    <a href="#">Mas detalles</a>
-                </div>
-            </div>
-        </div>
-        <!-- Numero 3 -->
-        <div class="card">
-            <div class="face front">
-                <img src="{% static 'core/Games/paladins.jpg' %}" alt="">
-                <h3>Hi Rez Studios</h3>
-            </div>
-            <div class="face back">
-                <h3>Paladins</h3>
-                <p>Paladins: Champions of the Realm es un videojuego gratuito en línea de disparos en primera persona con componentes de hero shooter.</p>
-                <div class="link">
-                    <a href="#">Mas detalles</a>
-                </div>
-            </div>
-        </div>
-        <!-- Numero 4 -->
-        <div class="card">
-            <div class="face front">
-                <img src="{% static 'core/Games/smite.jpg' %}" alt="">
-                <h3>Hi Rez Studios</h3>
-            </div>
-            <div class="face back">
-                <h3>SMITE</h3>
-                <p>SMITE es un videojuego de acción MOBA en tercera persona, creado y publicado por Hi-Rez Studios para Microsoft Windows, Xbox One, PlayStation 4 y Nintendo Switch.</p>
-                <div class="link">
-                    <a href="#">Mas detalles</a>
-                </div>
-            </div>
         </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
