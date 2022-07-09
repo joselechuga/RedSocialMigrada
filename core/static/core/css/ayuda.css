@@ -1,69 +1,268 @@
-
-body{
-    background-image: url(../img/Fondos/bk_carru.png);
+body {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.contenedor{
-    background-image: url(../img/Fondos/fondoformulario1.png);
-
-    height: 78vh;
+.t1 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
-#cuadrofiltro{
-    margin: 100px;
-    width: 700px;
-    height: 450px;
-    border-radius: 6px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.796);
-    border: 1px solid #7b141417;
-    right: 15%;
-    margin-right: 10%;
-    left: 15%;
+.iconosplay {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 30px;
 }
 
-.filtro{
-    -webkit-backdrop-filter:blur(5px);
-    backdrop-filter:blur(5px);
-    background-color: rgba(61, 34, 34, 0.304);
+.c1 {
+    display: flex;
+    height: 80vh;
+    justify-content: space-between;
+}
+
+.d1 {
+    height: 2em;
+    width: 20vh;
+    background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    height: 45em;
+    width: 40em;
+    margin: 1em;
+    border-radius: 30px;
+    box-shadow: 10px 5px 5px black;
+
+}
+
+.d2 {
+    display: flex;
+    flex-direction: column;
+    height: 45em;
+    width: 40em;
+    border: 2px solid rgb(141, 7, 7);
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    margin: 1em;
+    border-radius: 30px;
+    box-shadow: 10px 5px 5px black;
+
+}
+
+label {
+    font-family: 'Orelega One', cursive;
+    font-size: 2em;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Orelega One', cursive;
+}
+
+h3,
+h4,
+h5 {
+    font-size: 20w;
+    color: rgb(0, 0, 0);
+    font-family: 'Alfa Slab One', cursive;
+    /*font-family: 'Anton', sans-serif;*/
+
+}
+
+.imgins {
+    display: flex;
+    justify-content: center;
+}
+
+.img-i1 {
+    border-radius: 30px;
+}
+
+.botones {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
-    left: 15%;
-
+    margin: 1em;
 }
 
-h1{
+.i1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    flex-direction: column;
+    padding: 1em;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}
+
+.t2 {
+    padding: 3px;
+}
+
+
+.loader {
+    --path: #2f3545;
+    --dot: #5628ee;
+    --duration: 3s;
+    width: 44px;
+    height: 44px;
+    position: relative;
+}
+
+.loader:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
     position: absolute;
-    color: #fff;
-    top: 0%;
-    right: 20%;
-}
-h3{
-    font-family: 'Orelega One', cursive;
-    font-size: 30px;
-    color: aliceblue;
+    display: block;
+    background: var(--dot);
+    top: 37px;
+    left: 19px;
+    transform: translate(-18px, -18px);
+    animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
 }
 
-h4{
-    position: absolute;
-    color: #fff;
-    top: 25%;
-    right: 15%;
-    left: 10%;
+.loader svg {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
-h5{
-    position: absolute;
-    color: #fff;
-    top: 60%;
-    right: 15%;
-    left: 10%;
+.loader svg rect,
+.loader svg polygon,
+.loader svg circle {
+    fill: none;
+    stroke: var(--path);
+    stroke-width: 10px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
 }
+
+.loader svg polygon {
+    stroke-dasharray: 145 76 145 76;
+    stroke-dashoffset: 0;
+    animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+.loader svg rect {
+    stroke-dasharray: 192 64 192 64;
+    stroke-dashoffset: 0;
+    animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+.loader svg circle {
+    stroke-dasharray: 150 50 150 50;
+    stroke-dashoffset: 75;
+    animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+.loader.triangle {
+    width: 48px;
+}
+
+.loader.triangle:before {
+    left: 21px;
+    transform: translate(-10px, -18px);
+    animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+
+@keyframes pathTriangle {
+    33% {
+        stroke-dashoffset: 74;
+    }
+
+    66% {
+        stroke-dashoffset: 147;
+    }
+
+    100% {
+        stroke-dashoffset: 221;
+    }
+}
+
+@keyframes dotTriangle {
+    33% {
+        transform: translate(0, 0);
+    }
+
+    66% {
+        transform: translate(10px, -18px);
+    }
+
+    100% {
+        transform: translate(-10px, -18px);
+    }
+}
+
+@keyframes pathRect {
+    25% {
+        stroke-dashoffset: 64;
+    }
+
+    50% {
+        stroke-dashoffset: 128;
+    }
+
+    75% {
+        stroke-dashoffset: 192;
+    }
+
+    100% {
+        stroke-dashoffset: 256;
+    }
+}
+
+@keyframes dotRect {
+    25% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(18px, -18px);
+    }
+
+    75% {
+        transform: translate(0, -36px);
+    }
+
+    100% {
+        transform: translate(-18px, -18px);
+    }
+}
+
+@keyframes pathCircle {
+    25% {
+        stroke-dashoffset: 125;
+    }
+
+    50% {
+        stroke-dashoffset: 175;
+    }
+
+    75% {
+        stroke-dashoffset: 225;
+    }
+
+    100% {
+        stroke-dashoffset: 275;
+    }
+}
+
+.loader {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+
+
+
+
+
 
 button {
     --color: #ad0b21;
@@ -82,9 +281,9 @@ button {
     border-radius: 6px;
     font-weight: 500;
     color: var(--color);
-   }
-   
-   button:before {
+}
+
+button:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -92,41 +291,38 @@ button {
     height: 150px;
     width: 200px;
     border-radius: 50%;
-   }
-   
-   button:hover {
+}
+
+button:hover {
     color: #fff;
-   }
-   
-   button:before {
+}
+
+button:before {
     top: 100%;
     left: 100%;
     transition: all .7s;
-   }
-   
-   button:hover:before {
-    top: -30px;
-    left: -30px;
-   }
-   
-   button:active:before {
-    background: #a30c1e;
-    transition: background 0s;
-   }
-
-   .contenedor2{
-    background-image: url(../imagenes/Fondos/fondoformulario2.png);
-    height: 100vh;
 }
 
-.limpiarformulario{
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+button:active:before {
+    background: #a30c1e;
+    transition: background 0s;
+}
+
+
+.limpiarformulario {
     position: absolute;
     left: 30%;
 }
 
 /*Fuente de letras formulario*/
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
-.letraform{
+
+.letraform {
     font-family: 'Orelega One', cursive;
     font-size: 30px;
     color: aliceblue;
@@ -149,7 +345,7 @@ button {
 
 
 
-.cajacomentario{
+.cajacomentario {
     border: 3px solid rgb(127, 170, 170);
     border-radius: 20px;
     background-color: rgb(77, 75, 75);
@@ -161,7 +357,7 @@ button {
 }
 
 
-#nombre{
+#nombre {
     border: 3px solid rgb(127, 170, 170);
     border-radius: 20px;
     background-color: rgb(77, 75, 75);
@@ -172,19 +368,7 @@ button {
     transition: all 1s;
 }
 
-#email{
-    border: 3px solid rgb(127, 170, 170);
-    border-radius: 20px;
-    background-color: rgb(77, 75, 75);
-    cursor: pointer;
-    padding: 7px 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    transition: all 1s;
-}
-
-
-#comentario{
+#email {
     border: 3px solid rgb(127, 170, 170);
     border-radius: 20px;
     background-color: rgb(77, 75, 75);
@@ -196,10 +380,23 @@ button {
 }
 
 
-.r1a{
+#comentario {
+    border: 3px solid rgb(127, 170, 170);
+    border-radius: 20px;
+    background-color: rgb(77, 75, 75);
+    cursor: pointer;
+    padding: 7px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    transition: all 1s;
+}
+
+
+.r1a {
     display: flex;
     justify-content: center;
 }
-.titulo1{
+
+.titulo1 {
     color: aliceblue;
 }

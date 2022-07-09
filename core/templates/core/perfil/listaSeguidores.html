@@ -1,36 +1,87 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    {% load static %}
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS v5.2.0-beta1 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <!--CSS-->
-    <link rel="stylesheet" href="{% static 'core/css/listaSeguidores.css' %}">
-  </head>
-  <body>
+<head>
+  {% load static %}
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <div class="container">
-        <h1>LISTA DE SEGUIDORES</h1>
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="{% static 'core/css/listaSeguidores.css' %}">
+</head>
 
-        <div class="overflow-auto">
-            <div class="container-fluid l1">
-                {% for i in usuarios %}
-                <div class="container-fluid l2">
-                    <h4 class="usuario">{{i.usuario}}</h4>
-                </div>
-                {% endfor %}
-            </div>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'inicio' %}">KAI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+        aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Más opciones
+            </a>
+            
+            <!--RELLENAR CON BOTONES EXTRAS -->
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="{% url 'inicio' %}">Inicio</a></li>
+                <li><a class="dropdown-item" href="{% url 'chat' %}">Chat</a></li>
+                <li><a class="dropdown-item" href="{% url 'ayuda' %}">Ayuda</a></li>
+                <li><a class="dropdown-item" href="{% url 'index' %}">Cerrar sesión</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link " href="{% url 'api' %}">Consulta precio de RP</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="seguidores" class="bt3">
+    <div class="titulousuarios">
+      <h1 class="x1">LISTADO SEGUIDORES</h1>
+    </div>
+    <div id="seguidores" class="bt1 overflow-auto">
+      {% for i in usuarios %}
+      <div id="seguidores" class="bt2">
+        <div class="duser">
+          <h4>{{i.usuario}}</h4>
         </div>
+
+        <div class="duser">
+          <img class="perfil" src="{% static 'core/img/logos/LOGO1_2.png' %}" alt="">
+        </div>
+
+        <div class="duser">
+          <a href="{% url 'borrarUsuario' i.usuario %}"><button class="btn btn-danger">Eliminar seguidor</button></a>
+
+        </div>
+
+      </div>
+      {% endfor %}
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"></script>
+      <script src="{% static 'core/js/recarga.js' %}"></script>
+</body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-  </body>
 </html>
