@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import usuarios
+from .models import usuarios,Message,Room
 from contextvars import Context
 from email import message
 from multiprocessing import context
@@ -36,8 +36,21 @@ def paginaAyuda(request):
 def ayuda(request):
     return render(request,'core/ayuda/ayuda2.html')
 
+def ayuda3(request):
+    return render(request,'core/ayuda/ayuda3.html')
+
 def chat(request):
     return render(request,'core/Mensajeria/chat.html')
+
+def room(request, room):
+    username = request.GET.get('username')
+    room_details = Room.objects.get(name=room)
+    return render(request, 'core/Mensajeria/room.html', {
+        'username': username,
+        'room': room,
+        'room_details': room_details
+    })
+
 
 def listaSeguidores(request):
 

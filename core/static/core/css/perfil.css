@@ -32,10 +32,15 @@ h3{
     border: 1px solid red;
     border-radius: 15px;
     width: 50%;
-    height: auto;
+    height: 87vh;
     min-width: 300px;
     padding: 5px;
 }
+
+.profileuser::-webkit-scrollbar {
+  display: none;
+}
+
 .suggestions{
     border: 1px solid red;
     border-radius: 15px;

@@ -1,0 +1,42 @@
+.body{
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    height: 100vh;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    width: 20em;
+
+}
+
+
+.izquierdo{
+    border: 2px solid beige;
+    height: 60vh; 
+    margin-top: 2em;
+}
+
+.derecho{
+    border: 2px solid beige;
+    width: 40em;
+}
+
+.tayu{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    height: 5em;
+    width: 13em;
+}
