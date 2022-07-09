@@ -10,7 +10,16 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from .forms import  UserRegisterForm
 from .models import *
 from django.contrib import messages
+from rest_framework import viewsets
+from .serializers import UsuariosSerializers
+
 # Create your views here.
+
+class usuarioViewset(viewsets.ModelViewSet):
+    queryset = usuarios.objects.all()
+    serializer_class = UsuariosSerializers
+
+
 
 def index(request):
     return render(request,'core/index.html')
@@ -86,3 +95,5 @@ def register(request):
 
 def log(request):
     return render(request,'core/Registro_usuario/login.html')
+
+
