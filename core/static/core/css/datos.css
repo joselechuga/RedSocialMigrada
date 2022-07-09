@@ -4,4 +4,29 @@ body{
 /*cambio de color letra*/
 #precio{
     color: aqua;
+    font-size: 20w;
+}
+
+.info{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cinf{
+    display: flex;
+    justify-content: center;
+}
+
+.cda{
+    display: flex;
+    justify-content: center;
+}
+
+.datos{
+    border-radius: 30px;
+    font-size: 20w;
+    margin: 10px;
 }

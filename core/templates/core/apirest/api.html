@@ -12,9 +12,10 @@
 </head>
   <body>
     
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'inicio' %}">KAI</a>
+        <a class="navbar-brand" href="#">KAI</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
           aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,16 +30,16 @@
               
               <!--RELLENAR CON BOTONES EXTRAS -->
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="../Inicio/inicio.html">Inicio</a></li>
-                <li><a class="dropdown-item" href="../Mensajeria/chat.html">Chat</a></li>
-                <li><a class="dropdown-item" href="../ayuda/ayuda.html">Ayuda</a></li>
-                <li><a class="dropdown-item" href="../index.html">Cerrar sesión</a></li>
+                <li><a class="dropdown-item" href="{% url 'inicio' %}">Inicio</a></li>
+                <li><a class="dropdown-item" href="{% url 'chat' %}">Chat</a></li>
+                <li><a class="dropdown-item" href="{% url 'ayuda' %}">Ayuda</a></li>
+                <li><a class="dropdown-item" href="{% url 'games' %}">juegos de la comunidad</a></li>
+                <li><a class="dropdown-item" href="{% url 'index' %}">Cerrar sesión</a></li>
               </ul>
             </li>
           </ul>
           <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link " href="../apirest/api.html">
-                Consulta precio de RP</a></li>
+            <li class="nav-item"><a class="nav-link " href="{% url 'api' %}">Consulta precio de RP</a></li>
           </ul>
         </div>
       </div>
@@ -47,11 +48,24 @@
     
       <div class="container">
         <button id="enviar" type="button" class="btn btn-primary m-5 p-2">Da click aqui para saber el precio del RP </button>
-    </div>
+        <div class="info">
+          <div class="cinf">
+            <h3>
+              ¿Que es el RP?
+            </h3>
+          </div>
+          <div class="cinf">
+            <h5>RP es la moneda que se utiliza dentro de la comunidad Riot Games</h5>
 
-    <div class="container bg-danger" id="precio">
+          </div>
+        </div>
+      </div>
 
-    </div>
+      <div class="overflow-auto cda">
+        <div class="container bg-danger datos" id="precio">
+
+        </div>
+      </div>
 
 <!---->
 
