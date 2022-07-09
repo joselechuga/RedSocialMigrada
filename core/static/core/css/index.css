@@ -7,6 +7,20 @@ body{
 }
 
 #btn-google{
-    width: 100px;
-    height: 70px;
+    width: 100%;
+    height: 40%;
+    padding: 10px
+}
+@media(max-width:900px){
+    .form{
+        padding: 0px;
+    }
+}
+@media(max-width: 1600px){
+    .form{
+        width: 100%;
+    }
+    .form{
+        padding: 10px;
+    }
 }
