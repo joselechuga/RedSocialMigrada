@@ -6,59 +6,47 @@ body{
     flex-direction: column;
 }
 
+.t1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.iconosplay{
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 30px;
+}
 
 .c1{
     display: flex;
-    border: 2px solid wheat;
     height: 80vh;
     justify-content: space-between;
 }
 
 .d1{
-
     height: 2em;
     width: 20vh;
-    background-color: #ad0b21;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    height: 45em;
+    width: 40em;
+    margin: 1em;
+    border-radius: 30px;
+    box-shadow: 10px 5px 5px black;
 
 }
 
 .d2{
     display: flex;
     flex-direction: column;
-    height: 20em;
-    width: 20em;
-    border: 2px solid rgb(7, 141, 61);
-
-}
-
-.contenedor{
-    background-image: url(../img/Fondos/fondoformulario1.png);
-    height: 50vh;
-    display: flex;
-    justify-content: flex-end;
-}
-
-#cuadrofiltro{
-    margin: 100px;
-    width: 700px;
-    height: 450px;
-    border-radius: 6px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.796);
-    border: 1px solid #7b141417;
-    right: 15%;
-    margin-right: 10%;
-    left: 15%;
-}
-
-.filtro{
-    -webkit-backdrop-filter:blur(5px);
-    backdrop-filter:blur(5px);
-    background-color: rgba(61, 34, 34, 0.304);
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    left: 15%;
+    height: 45em;
+    width: 40em;
+    border: 2px solid rgb(141, 7, 7);
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    margin: 1em;
+    border-radius: 30px;
 
 }
 
@@ -67,27 +55,195 @@ h1{
     font-family: 'Orelega One', cursive;
 }
 
-h3{
-    font-family: 'Orelega One', cursive;
-    font-size: 30px;
-    color: aliceblue;
+h3 ,h4,h5{
+    font-size: 20w;
+    color: rgb(255, 255, 255);
+    font-family: 'Anton', sans-serif;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
-h4{
-    position: absolute;
-    color: #fff;
-    top: 25%;
-    right: 15%;
-    left: 10%;
+.botones{
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+}
+.contenedor{
+    background-image: url(../img/Fondos/fondoformulario1.png);
+    height: 50vh;
+    display: flex;
+    justify-content: flex-end;
 }
 
-h5{
-    position: absolute;
-    color: #fff;
-    top: 60%;
-    right: 15%;
-    left: 10%;
+.i1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    flex-direction: column;
+    padding: 1em;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 30px;
 }
+
+/* From uiverse.io by @mobinkakei */
+.loader {
+    --path: #2f3545;
+    --dot: #5628ee;
+    --duration: 3s;
+    width: 44px;
+    height: 44px;
+    position: relative;
+  }
+  
+  .loader:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    background: var(--dot);
+    top: 37px;
+    left: 19px;
+    transform: translate(-18px, -18px);
+    animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loader svg rect, .loader svg polygon, .loader svg circle {
+    fill: none;
+    stroke: var(--path);
+    stroke-width: 10px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+  
+  .loader svg polygon {
+    stroke-dasharray: 145 76 145 76;
+    stroke-dashoffset: 0;
+    animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg rect {
+    stroke-dasharray: 192 64 192 64;
+    stroke-dashoffset: 0;
+    animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg circle {
+    stroke-dasharray: 150 50 150 50;
+    stroke-dashoffset: 75;
+    animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader.triangle {
+    width: 48px;
+  }
+  
+  .loader.triangle:before {
+    left: 21px;
+    transform: translate(-10px, -18px);
+    animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  @keyframes pathTriangle {
+    33% {
+      stroke-dashoffset: 74;
+    }
+  
+    66% {
+      stroke-dashoffset: 147;
+    }
+  
+    100% {
+      stroke-dashoffset: 221;
+    }
+  }
+  
+  @keyframes dotTriangle {
+    33% {
+      transform: translate(0, 0);
+    }
+  
+    66% {
+      transform: translate(10px, -18px);
+    }
+  
+    100% {
+      transform: translate(-10px, -18px);
+    }
+  }
+  
+  @keyframes pathRect {
+    25% {
+      stroke-dashoffset: 64;
+    }
+  
+    50% {
+      stroke-dashoffset: 128;
+    }
+  
+    75% {
+      stroke-dashoffset: 192;
+    }
+  
+    100% {
+      stroke-dashoffset: 256;
+    }
+  }
+  
+  @keyframes dotRect {
+    25% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(18px, -18px);
+    }
+  
+    75% {
+      transform: translate(0, -36px);
+    }
+  
+    100% {
+      transform: translate(-18px, -18px);
+    }
+  }
+  
+  @keyframes pathCircle {
+    25% {
+      stroke-dashoffset: 125;
+    }
+  
+    50% {
+      stroke-dashoffset: 175;
+    }
+  
+    75% {
+      stroke-dashoffset: 225;
+    }
+  
+    100% {
+      stroke-dashoffset: 275;
+    }
+  }
+  
+  .loader {
+    display: inline-block;
+    margin: 0 16px;
+  }
+  
+   
+
+
+
+
 
 button {
     --color: #ad0b21;
