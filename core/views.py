@@ -39,6 +39,9 @@ def perfil(request):
 def apirest(request):
     return render(request,'core/apirest/api.html')
 
+def games(request):
+    return render(request,'core/recomendados/games.html')
+
 def paginaAyuda(request):
     return render(request,'core/ayuda/ayuda.html')
 
